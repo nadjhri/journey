@@ -1,0 +1,167 @@
+* {
+box-sizing: border-box;
+}
+
+body {
+--background-color: white;
+--text-color: black;
+--elements-color: white;
+margin: 0;
+font-family: Nunito, sans-serif;
+background-color: var(--background-color);
+color: var(--text-color);
+}
+
+main {
+align-items: center;
+min-height: 100vh;
+padding: 24px;
+}
+
+a {
+text-decoration-line: none;
+color: inherit;
+}
+
+.header{
+width: 100%;
+background-position: center;
+background-size: cover;
+position: relative;
+}
+
+nav{
+display: flex;
+padding: 2% 6%;
+justify-content: space-between;
+align-items: center;
+background-color: #342e6e;
+}
+
+nav img{
+width: 150px;
+}
+
+.nav-links{
+flex: 1;
+text-align: right;
+}
+
+.nav-links ul li{
+list-style: none;
+display: inline-block;
+padding: 8px 12px;
+position: relative;
+}  
+
+.nav-links ul li a{
+color: #fff;
+text-decoration: none;
+font-size: 13px;
+font-family: Nunito, sans-serif;
+}
+
+.nav-links ul li::after{
+content: '';
+width: 0%;
+height: 2px;
+background: #f44336;
+display: block;
+margin: auto;
+transition: 0.5s; 
+}
+
+.nav-links ul li:hover::after{
+width: 100%;
+}
+
+.ctc{
+margin: 10px auto;
+width: 80%;
+background-image: linear-gradient(rgba(4, 9, 30, 0.222),rgba(4,9,30,0.7)), url('assets/bg2.jpg');
+background-position: center;
+background-size: cover;
+border-radius: 10px;
+text-align: center;
+font-family: Nunito, sans-serif;
+padding: 80px 0;
+}
+
+.ctc h1{
+color: #fff;
+padding: 0;
+font-size: 50px;
+}
+
+.card {
+width: 100%;
+max-width: 900px;
+background-color: #fff;
+border-radius: 8px;
+overflow: hidden;
+margin: auto;
+margin-top: 60px;
+}
+
+.card-header {
+display: flex;
+align-items: center;
+padding: 16px;
+position: relative;
+}
+
+.number {
+background-color: black;
+color: white;
+font-size: 18px;
+width: 32px;
+height: 32px;
+display: flex;
+align-items: center;
+justify-content: center;
+border-radius: 50%;
+margin-right: 10px;
+}
+
+.title {
+flex: 1;
+font-size: 24px;
+font-weight: bold;
+color: #333;
+}
+
+.card-image {
+width: 100%;
+height: auto;
+display: block;
+}
+
+.card-location {
+font-size: 22px;
+color: #333;
+font-weight: bold;
+margin-left: 10px;
+}
+
+.card-description {
+padding: 10px;
+font-size: 16px;
+color: #555;
+line-height: 1.6;
+}
+
+.footer{
+width: 100%;
+text-align: center;
+font-family: Nunito, sans-serif;
+color: rgba(0, 0, 0, 0.655);
+padding: 30px 0;
+background-color: #fff3f3;
+margin-top: 100px;
+}
+
+.footer h4{
+margin-bottom: 15px;
+margin-top: 20px;
+font-weight: 600;
+}

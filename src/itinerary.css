@@ -1,0 +1,231 @@
+* {
+box-sizing: border-box;
+font-family: Nunito, sans-serif;
+}
+
+body {
+--background-color: white;
+--text-color: black;
+--elements-color: white;
+margin: 0;
+font-family: Nunito, sans-serif;
+background-color: var(--background-color);
+color: var(--text-color);
+}
+
+main {
+padding: 24px;
+}
+
+a {
+text-decoration-line: none;
+color: inherit;
+}
+
+.header{
+width: 100%;
+background-position: center;
+background-size: cover;
+position: relative;
+}
+
+nav{
+display: flex;
+padding: 2% 6%;
+justify-content: space-between;
+align-items: center;
+background-color: #342e6e;
+}
+
+nav img{
+width: 150px;
+}
+
+.nav-links{
+flex: 1;
+text-align: right;
+}
+
+.nav-links ul li{
+list-style: none;
+display: inline-block;
+padding: 8px 12px;
+position: relative;
+}  
+
+.nav-links ul li a{
+color: #fff;
+text-decoration: none;
+font-size: 13px;
+font-family: Nunito, sans-serif;
+}
+
+.nav-links ul li::after{
+content: '';
+width: 0%;
+height: 2px;
+background: #f44336;
+display: block;
+margin: auto;
+transition: 0.5s; 
+}
+
+.nav-links ul li:hover::after{
+width: 100%;
+}
+.container {
+max-width: 600px;
+margin: 40px auto;
+padding: 20px;
+border-radius: 10px;
+background-color: #ffffff;
+box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
+}
+
+/* Heading */
+h2 {
+text-align: center;
+font-size: 1.8em;
+color: #0078d4;
+margin-bottom: 20px;
+font-weight: 700;
+}
+
+/* Form styling */
+form label {
+display: block;
+margin-top: 15px;
+font-size: 0.9em;
+color: #555;
+}
+
+form input, form textarea {
+width: 100%;
+padding: 10px 12px;
+margin-top: 5px;
+border: 1px solid #ddd;
+border-radius: 8px;
+outline: none;
+transition: all 0.3s ease;
+font-size: 1em;
+}
+
+form input:focus, form textarea:focus {
+border-color: #0078d4;
+box-shadow: 0 0 5px rgba(0, 120, 212, 0.3);
+}
+
+form button {
+width: 100%;
+padding: 12px;
+margin-top: 20px;
+background-color: #0078d4;
+color: #ffffff;
+border: none;
+border-radius: 8px;
+font-size: 1em;
+cursor: pointer;
+font-weight: bold;
+transition: background-color 0.3s ease;
+}
+
+form button:hover {
+background-color: #005bb5;
+}
+
+/* Itinerary List */
+#itineraryList {
+margin-top: 30px;
+}
+
+/* Itinerary item */
+.itinerary-item {
+padding: 15px;
+margin: 10px 0;
+border: 1px solid #ddd;
+border-radius: 8px;
+background-color: #f9f9f9;
+}
+
+.itinerary-item h3 {
+font-family: 'Nunito', sans-serif;
+color: #333;
+}
+
+.itinerary-item p {
+font-family: 'Nunito', sans-serif;
+color: #555;
+}
+
+.edit-button, .delete-button {
+padding: 5px 10px;
+border: none;
+border-radius: 4px;
+font-family: 'Nunito', sans-serif;
+cursor: pointer;
+}
+
+.edit-button {
+background-color: #007bff;
+color: white;
+margin-right: 5px;
+}
+
+.edit-button:hover {
+background-color: #005bb5;
+color: white;
+margin-right: 5px;
+}
+
+.delete-button {
+background-color: #dc3545;
+color: white;
+}
+
+.delete-button:hover {
+background-color: #a32532;
+color: white;
+}
+
+@media (max-width: 600px) {
+.container {
+padding: 15px;
+}
+
+h2 {
+font-size: 1.5em;
+}
+
+form button {
+font-size: 0.9em;
+padding: 10px;
+}
+
+.itinerary-item h3 {
+font-size: 1em;
+}
+
+.itinerary-item p {
+font-size: 0.8em;
+}
+}
+
+#itineraryList {
+display: none;
+}
+
+.footer{
+width: 100%;
+text-align: center;
+font-family: Nunito, sans-serif;
+color: rgba(0, 0, 0, 0.655);
+padding: 30px 0;
+background-color: #fff3f3;
+margin-top: 100px;
+}
+
+.footer h4{
+margin-bottom: 15px;
+margin-top: 20px;
+font-weight: 600;
+}

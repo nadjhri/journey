@@ -1,0 +1,164 @@
+* {
+box-sizing: border-box;
+}
+
+body {
+--background-color: white;
+--text-color: black;
+--elements-color: white;
+margin: 0;
+font-family: Nunito, sans-serif;
+background-color: var(--background-color);
+color: var(--text-color);
+}
+
+main {
+padding: 24px;
+}
+
+a {
+text-decoration-line: none;
+color: inherit;
+}
+
+.header{
+width: 100%;
+background-position: center;
+background-size: cover;
+position: relative;
+}
+
+nav{
+display: flex;
+padding: 2% 6%;
+justify-content: space-between;
+align-items: center;
+background-color: #342e6e;
+}
+
+nav img{
+width: 150px;
+}
+
+.nav-links{
+flex: 1;
+text-align: right;
+}
+
+.nav-links ul li{
+list-style: none;
+display: inline-block;
+padding: 8px 12px;
+position: relative;
+}  
+
+.nav-links ul li a{
+color: #fff;
+text-decoration: none;
+font-size: 13px;
+font-family: Nunito, sans-serif;
+}
+
+.nav-links ul li::after{
+content: '';
+width: 0%;
+height: 2px;
+background: #f44336;
+display: block;
+margin: auto;
+transition: 0.5s; 
+}
+
+.nav-links ul li:hover::after{
+width: 100%;
+}
+
+.country-details-container {
+max-width: 1200px;
+margin-inline: auto;
+margin-top: 32px;
+}
+
+.back-button {
+padding: 6px 24px;
+box-shadow: 0 0 4px 0px rgba(0, 0, 0, 0.2);
+border-radius: 4px;
+cursor: pointer;
+}
+
+.country-details {
+display: flex;
+align-items: center;
+gap: 64px;
+margin-top: 64px;
+}
+
+.country-details img {
+width: 40%;
+border: 1px solid #ddd;
+}
+
+.details-text {
+display: flex;
+flex-direction: column;
+row-gap: 12px;
+column-gap: 64px;
+max-height: 180px;
+flex-wrap: wrap;
+}
+
+.details-text p {
+margin: 0;
+}
+
+.border-countries {
+margin-top: 48px;
+display: flex;
+align-items: flex-start;
+flex-wrap: wrap;
+gap: 8px;
+}
+
+.border-countries a {
+padding: 4px 16px;
+box-shadow: 0 0 4px 0px rgba(0, 0, 0, 0.2);
+border-radius: 4px;
+font-size: 14px;
+}
+
+@media(max-width: 940px) {
+.country-details {
+flex-direction: column;
+align-items: flex-start;
+margin-top: 32px;
+gap: 16px;
+}
+
+.details-text {
+max-height: unset;
+}
+
+.country-details img {
+width: 100%;
+max-width: 400px;
+}
+
+}
+
+
+.footer{
+width: 100%;
+text-align: center;
+font-family: Nunito, sans-serif;
+color: rgba(0, 0, 0, 0.655);
+padding: 30px 0;
+background-color: #fff3f3;
+margin-top: 100px;
+
+}
+
+.footer h4{
+margin-bottom: 15px;
+margin-top: 20px;
+font-weight: 600;
+}
